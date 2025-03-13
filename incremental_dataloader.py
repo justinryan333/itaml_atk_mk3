@@ -244,7 +244,7 @@ class IncrementalDataset:
             # ===============================================================================================================================================================
 
             elif (self.dataset_name == "cifar10poison"):
-                train_dataset = dataset.base_dataset(root=path, train=True, download=True, transform=trsf_train)
+                test_dataset = dataset.base_dataset(root=path, train=True, download=True, transform=trsf_train)
 
                 train_dataset = new_train_set
 
